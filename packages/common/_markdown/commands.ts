@@ -1,14 +1,14 @@
 // Changes made to this file:
 // - ignore language facet stuff, always assume markdown
-
 import {
   ChangeSpec,
   EditorSelection,
   StateCommand,
+  SyntaxNode,
+  syntaxTree,
   Text,
+  Tree,
 } from "../../../dep_common.ts";
-import { syntaxTree } from "../../../dep_common.ts";
-import { SyntaxNode, Tree } from "../../../dep_common.ts";
 import { markdownLanguage } from "./markdown.ts";
 
 function nodeStart(node: SyntaxNode, doc: Text) {
